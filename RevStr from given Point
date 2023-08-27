@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+ int a[10],i,j,k,l,m;
+ clrscr();
+ printf("Enter the size of Array");
+ scanf("%d",&l);
+ printf("Enter the String in arrey");
+ for(i=0;i<=l;i++)
+ {
+  scanf("%d",&a[i]);
+ }
+
+ printf("Enter the target Value");
+ scanf("%d",&k);
+   for(m=0;m<=k;m++)
+   {
+   printf("%d",a[m]);
+   }
+
+ for(j=l;j>k;j--)
+ {
+
+  printf("%d",a[j]);
+ }
+
+ getch();
+}
