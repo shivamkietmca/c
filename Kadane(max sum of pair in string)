@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a[100],i,n,max=0,curr=0;
+ clrscr();
+ printf("Emter the size of array:");
+ scanf("%d",&n);
+ printf("Enter the Element");
+ for(i=0;i<n;i++)
+ {
+  scanf("%d",&a[i]);
+ }
+ for(i=0;i<n;i++)
+ {
+  curr=curr+a[i];
+  if(curr < 0)
+  curr=0;
+  if(max < curr)
+  max=curr;
+ }
+ printf("Max Sum :%d",max);
+ getch();
+}
